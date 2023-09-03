@@ -19,7 +19,7 @@ scountsPerMillion <- cpm(scounts)
 summary(scountsPerMillion)
 
 
-meta <- read.csv('Ferreira.metadata3 (1).csv', sep= ',', header=T)
+meta <- read.csv('Ferreira.metadata.csv', sep= ',', header=T)
 
 meta <- meta[,c(1,11, 12, 14)]
 names(meta)<-c('sample', 'temperature', 'infection', 'time')
