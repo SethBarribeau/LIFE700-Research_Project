@@ -8,7 +8,7 @@ names(namesD)<-'sample'
 rownames(x) <- x[,1] 
 scounts <- x[,c(6:186)]
 
-meta<- read.csv('Murrieta.metadata1.csv', sep= ',', header=T)
+meta<- read.csv('Murrieta.metadata.csv', sep= ',', header=T)
 meta <- meta[,c(1,12)]
 names(meta)<-c('sample', 'temperature')
 table(meta$temperature)
